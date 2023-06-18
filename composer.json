@@ -1,0 +1,17 @@
+{
+    "name": "mehdi/opt-v2",
+    "autoload": {
+        "psr-4": {
+            "App\\" : "App"
+        }
+    },
+    "authors": [
+        {
+            "name": "mehdi bakhshi",
+            "email": "mehdibakhshi970@yahoo.com"
+        }
+    ],
+    "require": {
+        
+    }
+}
