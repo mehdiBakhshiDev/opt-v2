@@ -3,10 +3,10 @@ namespace App\Core\Routing;
 
 class Route
 {
-    public static $routes;
+    private static $Routes;
     public static function AddRoute($method,$uri)
     {
-     self::$routes[] = ['method' => $method,'uri' => $uri];
+     self::$Routes[] = ['method' => $method,'uri' => $uri];
     }
 
     public static function get($method,$uri)
@@ -21,7 +21,7 @@ class Route
 
     public static function routes()
     {
-        echo json_encode(self::$routes);
+      return self::$Routes;
     }
     
 }
