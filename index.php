@@ -1,13 +1,13 @@
 <?php
-require('vendor/autoload.php');
+    require('vendor/autoload.php');
 
     use App\Core\Routing\Route;
-    Route::get('get','upload');
-    Route::post('post','upload');
-   echo '<pre>';
-   print_r(Route::routes());
-   echo '</pre>';
-  
+    use App\Core\Routing\Router;
+    Route::get('get','/img/upload');
+    Route::get('get','/img/detail');
+    
+    $router = new Router;
+    echo $router->CheckRoute();
 ?>
 
 <!DOCTYPE html>

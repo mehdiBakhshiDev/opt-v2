@@ -47,4 +47,8 @@ class Request
     {
         return self::$RequestUri;
     }
+    public function GetMethod()
+    {
+        return strtolower(self::$RequestMethod);
+    }
 }
